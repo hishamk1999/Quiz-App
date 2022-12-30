@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/Quiz.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+</head>
+
+<body>
+
+  <section class="quizApp pt-5 pb-5">
+    <div class="container">
+
+      <div id="QuestionNum" class=" mb-5" style="display: none;">
+        <div class="d-flex justify-content-center">
+          <span id="currentQ" class="me-2 fs-4">0</span> <span class="me-2 fs-4">/</span> <span
+            class="me-2 fs-4 numOfAllQues">10</span>
+        </div>
+      </div>
+
+      <div id="question" class="text-center mb-5" style="display: none;">
+        <h1>What is your name ?</h1>
+      </div>
+
+      <div id="Answers" class="w-50 m-auto" style="display: none;">
+
+        <!-- -->
+        <label for="ansA" id="labA" class="row align-items-center">
+          <!-- <input type="radio" name="Answer" id="ansA" class="input">
+          <p class="col-11 mb-0 fs-5 theAns">My name is Defacto</p> -->
+        </label>
+
+        <label for="ansB" id="labB" class="row align-items-center ">
+          <!-- <input type="radio" name="Answer" id="ansB" class="input">
+          <p class="col-11 mb-0 fs-5 theAns">My name is Defacto</p> -->
+        </label>
+
+        <label for="ansC" id="labC" class="row align-items-center">
+          <!-- <input type="radio" name="Answer" id="ansC" class="input">
+          <p class="col-11 mb-0 fs-5 theAns">My name is Defacto</p> -->
+        </label>
+
+        <label for="ansD" id="labD" class="row align-items-center">
+          <!-- <input type="radio" name="Answer" id="ansD" class="input">
+          <p class="col-11 mb-0 fs-5 theAns">My name is Defacto</p> -->
+        </label>
+
+      </div>
+
+      <div id="control" class="d-flex justify-content-evenly align-content-center flex-row">
+        <button id="next" class="btn btn-light" style="display: none;">Next</button>
+        <button id="finish" class="btn btn-danger" style="display: none;">Finish</button>
+        <button id="startBtn" class="btn btn-danger">Start Quiz</button>
+      </div>
+
+      <div id="result" class="mb-5" style="display: none;">
+        <div class="d-flex justify-content-center">
+          <span>you Answer</span> <span id="rightAns" class="ms-2 me-2">3</span> <span>question right from</span> <span
+            class="numOfAllQues ms-2">10</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="./Script/bootstrap.bundle.min.js"></script>
+  <script src="./Script/Service/Quiz.js" type="module"></script>
+
+</body>
+
+</html>

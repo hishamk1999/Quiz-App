@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+.quizApp {
+	background: linear-gradient(to bottom, #23265c, #6468e4);
+	color: #cae6f0;
+}
+.input {
+	width: 15px;
+	height: 15px;
+	margin: 0 20px;
+}
+label {
+	margin: 18px 0;
+}
+p{
+	color: black;
+	display: block;
+	width: 100%;
+}
